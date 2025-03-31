@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .factura {
+            width: 50%;
+            border: 1px solid black;
+            padding: 15px;
+            margin: auto;
+        }
+        .titulo {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .total {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="factura">
+        <div class="titulo">SUPERMERCADOS "LA VENDEDORA"</div>
+        <p><strong>Cliente:</strong> Juan Francisco Redrován</p>
+        <p><strong>RUC:</strong> 1804562738</p>
+        <p><strong>Dirección:</strong> Ambato, Av. Cevallos</p>
+        <p><strong>Fecha:</strong> 25/04/2011</p>
+        <p><strong>N° Fra.:</strong> 2456.00</p>
+
+        <table>
+            <tr>
+                <th>Código</th>
+                <th>Cantidad</th>
+                <th>Concepto</th>
+                <th>Precio</th>
+                <th>Importe</th>
+            </tr>
+            <tr>
+                <td>A23</td>
+                <td>20</td>
+                <td>Lápices</td>
+                <td>25</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>A45</td>
+                <td>100</td>
+                <td>Borradores</td>
+                <td>10</td>
+                <td>1000</td>
+            </tr>
+        </table>
+
+        <p class="total">Importe: 1,500</p>
+        <p class="total">Descuento: 75</p>
+        <p class="total">Base Imponible: 1,425</p>
+        <p class="total">IVA: 228</p>
+        <p class="total"><strong>Total Factura: 1,653</strong></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machote de Inventario de Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .formulario {
+            width: 60%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .titulo {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            padding: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group label {
+            margin-right: 15px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="formulario">
+        <div class="titulo">Machote de Inventario de Personal</div>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" name="nombre">
+
+            <label>Dirección:</label>
+            <input type="text" name="direccion">
+
+            <label>Teléfono:</label>
+            <input type="text" name="telefono">
+
+            <label>Compañía de Seguros:</label>
+            <input type="text" name="compania">
+
+            <label>Estado Civil:</label>
+            <select name="estado_civil">
+                <option>Soltero/a</option>
+                <option>Casado/a</option>
+                <option>Divorciado/a</option>
+                <option>Viudo/a</option>
+            </select>
+
+            <label>Estado General de Salud:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="salud" value="hepatitis"> Hepatitis</label>
+                <label><input type="checkbox" name="salud" value="anemias"> Anemias</label>
+                <label><input type="checkbox" name="salud" value="diabetes"> Diabetes</label>
+                <label><input type="checkbox" name="salud" value="hipertension"> Hipertensión</label>
+                <label><input type="checkbox" name="salud" value="celiaco"> Celíaco</label>
+                <label><input type="checkbox" name="salud" value="asma"> Asma</label>
+                <label><input type="checkbox" name="salud" value="alergias"> Alergias</label>
+                <label>Otro: <input type="text" name="otro"></label>
+            </div>
+
+            <label>Experiencia Laboral:</label>
+            <input type="text" name="empresa" placeholder="Empresa">
+            <input type="text" name="puesto" placeholder="Nombre del puesto">
+            <textarea name="funciones" placeholder="Funciones del puesto"></textarea>
+
+            <label>Formación Académica:</label>
+            <input type="text" name="escolaridad" placeholder="Escolaridad">
+            <input type="text" name="escuela" placeholder="Escuela">
+            <input type="text" name="profesion" placeholder="Profesión">
+
+            <label>Estudios Adicionales:</label>
+            <input type="text" name="institucion" placeholder="Entidad o Escuela">
+            <input type="text" name="titulo" placeholder="Título obtenido">
+
+            <label>Información Adicional:</label>
+            <input type="text" name="puesto_actual" placeholder="Puesto actual">
+            <input type="text" name="num_empleado" placeholder="Número de empleado">
+            <input type="number" name="anos_puesto" placeholder="Número de años en el puesto">
+            <textarea name="comentarios" placeholder="Comentarios adicionales"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
