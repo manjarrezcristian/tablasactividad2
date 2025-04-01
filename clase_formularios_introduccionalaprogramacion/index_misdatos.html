@@ -23,7 +23,8 @@
         <h2>direccion</h2>
         <form>
             <label for="direccion">1.direccion</label>
-            <input type="text" placeholder="" id="direccion">
+            <textarea name="Direccion" id="Direccion" rows="6" required></textarea> <br>
+            <!-- <input type="text" placeholder="" id="direccion"> -->
             <br><br>
             <label for="codigopostal">2.codigo postal</label>
             <input type="number" placeholder="CP" id="codigopostal">
@@ -34,13 +35,16 @@
 
 
             <h2>forma de pago</h2>
-            <h2>tarjetas de credito</h2>
+            <h3>1.tarjetas de credito</h3>
 
             <form>
+                <ul>
 
-                <input type="radio">visa
-                <input type="radio">american express
-                <input type="radio">mastercard
+                    <li><input type="radio">visa</li>
+                    <li> <input type="radio">american express</li>
+                    <li><input type="radio">mastercard</li>
+
+                </ul>
                 <br><br>
                 <label for="numerotarjeta">2.numero de tarjeta</label>
                 <input type="number" placeholder="numero de la tarjeta" id="numerotarjeta">
@@ -51,6 +55,8 @@
                 <label for="tarjeta">4.nombre tarjeta</label>
                 <input type="text" placeholder="nombre exacto tarjeta" id="tarjeta">
                 <br><br>
+
+                <button type="submit">Comprar</button>
 
 
 

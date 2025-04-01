@@ -1,81 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .factura {
-            width: 50%;
-            border: 1px solid black;
-            padding: 15px;
-            margin: auto;
-        }
-        .titulo {
-            text-align: center;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        .total {
-            text-align: right;
-            font-weight: bold;
-        }
-    </style>
 </head>
+
 <body>
-
-    <div class="factura">
-        <div class="titulo">SUPERMERCADOS "LA VENDEDORA"</div>
-        <p><strong>Cliente:</strong> Juan Francisco Redrován</p>
-        <p><strong>RUC:</strong> 1804562738</p>
-        <p><strong>Dirección:</strong> Ambato, Av. Cevallos</p>
-        <p><strong>Fecha:</strong> 25/04/2011</p>
-        <p><strong>N° Fra.:</strong> 2456.00</p>
-
-        <table>
+    <table border="2" width="57.9%">
+        <thead>
             <tr>
-                <th>Código</th>
-                <th>Cantidad</th>
-                <th>Concepto</th>
-                <th>Precio</th>
-                <th>Importe</th>
+                <th rowspan="5" style="background-color: red;">supermercado "la vendedora"</th>
+                <th><input type="text"></th>
+                <th><input type="date"></th>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <center><label>n° Fra: 245600</label>
+                </th>
+                </center>
+
+
             </tr>
             <tr>
-                <td>A23</td>
-                <td>20</td>
-                <td>Lápices</td>
-                <td>25</td>
-                <td>500</td>
+                <th><label for="Cliente">Cliente</label></th>
+                <td rowspan="3"><textarea name="cliente" id="cliente" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <th>
+                    </td>RUC:</th>
             </tr>
             <tr>
-                <td>A45</td>
-                <td>100</td>
-                <td>Borradores</td>
-                <td>10</td>
-                <td>1000</td>
+                <th>Dirección</th>
             </tr>
-        </table>
+    </table border="2">
+    <table border="2" width="50%">
+        <tr>
+            <th>codig</th>
+            <th>cantidad</th>
+            <th>concecto</th>
+            <th>precio</th>
+            <th>importe</th>
+        </tr>
 
-        <p class="total">Importe: 1,500</p>
-        <p class="total">Descuento: 75</p>
-        <p class="total">Base Imponible: 1,425</p>
-        <p class="total">IVA: 228</p>
-        <p class="total"><strong>Total Factura: 1,653</strong></p>
-    </div>
+        </head>
 
+        <body>
+            <tr>
+                <th>a23</th>
+                <th>20</th>
+                <th>lapices</th>
+                <th>25</th>
+                <th>500</th>
+            </tr>
+            <tr>
+                <th>a45</th>
+                <th>100</th>
+                <th>borradores</th>
+                <th>10</th>
+                <th>1.000</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" min="0000"></td>
+                <td><input type="text"></td>
+                <td><input type="number" min="0000"></td>
+                <td><input type="number" min="0000"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" min="0000"></td>
+                <td><input type="text"></td>
+                <td><input type="number" min="0000"></td>
+                <td><input type="number" min="0000"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td rowspan="4" colspan="3"></td>
+                <td>Importe:</td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td>descuento:</td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td>base Imponible:</td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td>i.v.a.:</td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <center><b>total factura:</b>
+                </td>
+                </center>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            </tr>
+            </tbody>
+    </table>
 </body>
+
 </html>
